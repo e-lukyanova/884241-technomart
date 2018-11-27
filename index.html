@@ -8,8 +8,12 @@
      <header class="main-header">
      	<div class="background-menu">
          <a href="index.html" class="main-logo">Техномарт</a>
-             <p class="search">Поиск</p>
-             <!-- Здесь будет форма поиска-->
+             <form class="search" action="#" method="get">
+                 <input class="search-input-field" type="text" name="search" placeholder="Поиск:">
+                     <button type="submit" class="search-button">
+                     	<span class="visually-hidden">Искать</span>
+                     </button>
+             </form>
          <div class="bookmarks-header">
              <a href="#">Закладки:0</a>
          </div>
@@ -68,11 +72,14 @@
              <p>Вы можете забрать товар сами,
              заехав к нам в офис:</p>
              <a class="map" href="#">  
-                 <img src="img/delivery-map.png" width="291" height="153"alt="ул.Б.Конюшенная, д.19">
+                 <img src="img/delivery-map.png" width="291" height="153" alt="Адрес офиса:г.Санкт-Петербург, ул.Б.Конюшенная, д.19">
              </a>
-             <div class="big-map">
-                  	<img src="img/delivery-map-big.png" width="940" height="446" alt="ул.Б.Конюшенная, д.19">
-                  </div>
+             <div class="modal-big-map">
+                 <img src="img/delivery-map-big.png" width="940" height="446" alt="Адрес офиса:г.Санкт-Петербург, ул.Б.Конюшенная, д.19">
+                     <button class="close">
+                     	<span class="visually-hidden">Закрыть</span>
+                     </button>
+             </div>
              <p class="button-map">
                  <a class="button" href="#">Заблудились?Напишите нам!</a>
              </p>    
@@ -122,5 +129,22 @@
          <a class="project" href="https://htmlacademy.ru">HTML Academy</a></span>
      </div>
  </footer>
-</body>
+ <section class="modal-support">
+ 	<form class="support" action="#" method=post>
+ 		<p class="support-item">
+ 			<label for="support-item-name">Ваше имя:</label>
+ 		     <input id="support-item-name" type="text" name="name" placeholder="Имя Фамилия">
+ 		 </p>
+ 		 <p class="support-item">
+ 		 	 	 <label for="support-item-email">Ваш e-mail:</label>
+ 		         <input id="support-item-email" type="text" name="email" placeholder="email@example.com">
+ 		 </p>
+ 		 <p class="support-item">
+ 		 	 <label for="support-item-message">Текст письма:</label>
+ 		     <input id="support-item-message" type="text" name="message" placeholder="В свободной форме">
+ 		 </p>
+ 		 <button class="button" type="submit">Отправить</button>
+ 		</form>
+ 	</section>
+ 		</body>
 </html>
